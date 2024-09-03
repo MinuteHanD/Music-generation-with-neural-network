@@ -4,17 +4,16 @@
 
 This project focuses on processing MIDI files and generating new musical sequences using machine learning models. The workflow includes MIDI data extraction, analysis, and the training of a sequence model to predict and generate new notes.
 
-Table of Contents
-Installation
-Usage
-Dataset
-MIDI File Processing
-Model Training
-Generating New Music
-Results
-Contributing
-License
-Installation
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [MIDI File Processing](#midi-file-processing)
+- [Model Training](#model-training)
+- [Generating New Music](#generating-new-music)
+- [Results](#results)
+
+
 To run this project, you'll need to install the following dependencies:
 
 Fluidsynth - A software synthesizer for generating audio from MIDI files.
@@ -50,11 +49,7 @@ Learning Rate: 0.005
 Number of Epochs: 50
 Model summary and training:
 
-python
-Copy code
-model = tf.keras.Model(inputs, outputs)
-model.compile(loss=loss, optimizer=optimizer)
-history = model.fit(train_ds, epochs=epochs, callbacks=callbacks)
+
 Generating New Music
 The trained model is used to generate new musical sequences by predicting notes one by one. The generated notes are then converted back into a MIDI file format for playback.
 
